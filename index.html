@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" title="Coding design">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hunt Digital Media</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+</head>
+
+
+<body>
+    
+    <main class="table">
+        
+        <section class="table__header">
+            
+            <h1>Daily Run Rate</h1>
+           
+            
+            
+        </section>
+        <section class="table__body">
+            <table id="data-table">
+                <thead>
+                    <tr>
+                        <th>Action</th>
+                        <th> Id </th>
+                        <th> Start Date </th>
+                        <th> End Date</th>
+                        <th> Month,Year </th>
+                        <th> Dates Excluded </th>
+                        <th> Number of Days </th>
+                        <th>Lead Count</th>
+                        <th>Expected DRR</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> N/A </td>
+                        <td> N/A</td>
+                        <td> <div>
+                            <label for="start-date"></label>
+                            <input type="text" id="start-date" class="datepicker">
+                        </div></td>
+                        <td> <div>
+                            <label for="end-date"></label>
+                            <input type="text" id="end-date" class="datepicker">
+                        </div></td>
+                        <td>
+                            <div>
+                                <label></label>
+                                <span id="month"></span>
+                            </div>
+                            <div>
+                                <label></label>
+                                <span id="year"></span>
+                            </div>
+                        </td>
+                        <td>  <div>
+                            <label for="excluded-dates-input"></label>
+                            <input type="text" id="excluded-dates">
+                        </div> </td>
+                        <td> <div>
+                            <label>Number of Days:</label>
+                            <span id="num-days"></span>
+                        </div> </td>
+                        <td> <div>
+                            <label for="lead-count-input"></label>
+                            <input type="text" id="lead-count">
+                        </div> </td>
+                        <td> <div>
+                            <label></label>
+                            <span id="expected-lead-count"></span>
+                        </div> </td>
+                        <td> <button id="save-button">Save </button> </td>
+                    </tr>
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+        <br><br>
+       
+    </main>
+    
+   <script src="script.js"></script>
+</body>
+
+</html>
